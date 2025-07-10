@@ -236,18 +236,13 @@ footer {
     color: #1a1b2f;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
+svg {
+    fill: #1a1b2f;
+    transition: fill 0.3s ease, transform 0.3s ease;    
 }
 
-.social-icons a img {
-    transition: transform 0.3s ease;
-}
-
-.social-icons a:hover img {
+svg:hover {
+    fill: #ed1e79;
     transform: scale(1.1);
 }
 
@@ -261,12 +256,21 @@ footer {
 
     #work article {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         align-items: center;
     }
 
     #work article h2 {
         padding-top: 2rem;
+    }
+    #work article img {
+        max-width: 400px;
+        align-items: center;
+    }
+
+    .next-button {
+        padding: 1rem 3rem;
+        font-size: 1rem;
     }
 
     form {
@@ -307,7 +311,7 @@ footer {
     }
 
     #about h1 {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
     }
 
     #about p {
@@ -334,7 +338,7 @@ footer {
     }
 
     #work h1 {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         padding: 1rem 0;
     }
 
@@ -344,11 +348,11 @@ footer {
     }
 
     #work article p {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     #contact h1 {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
     }
 
     #contact form {
